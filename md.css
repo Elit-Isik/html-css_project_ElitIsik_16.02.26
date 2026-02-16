@@ -1,0 +1,128 @@
+
+h1{
+  font-size: 2.4rem;
+}
+
+.main__description_text {
+  font-size: 1.1rem;
+}
+.btn {
+  width: max-content;
+}
+h3 {
+  font-size: 1.7rem;
+}
+h2 {
+  font-size: 1rem;
+  color: var( --decoration1-light);
+}
+.area_text {
+  font-size: 1.1rem;
+}
+
+.trust__area_description {
+  max-width: 686px;
+  margin: 50px auto;
+  justify-content: center;
+  padding: 50px;
+  background-color: var(--surface2-light);
+  border-radius: 8px;
+  text-align: center;
+}
+.trust__icon {
+  font-size: 5rem;
+}
+.trust__icon_text {
+  font-size: 1.2rem;
+}
+.reasons__wrapper {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 686px; /*333x2 +20*/
+  margin: 0 auto;
+  padding: 50px 0;
+  gap: 20px;
+}
+.reason__box {
+  width: 333px;
+  height: 464px;
+  border-radius: 8px;
+}
+.btn__wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+  justify-content: center;
+}
+.reason__box_image img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.more__icon {
+  margin-right: 0;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1;
+  color: var(--decoration1-light);
+}
+
+/*HİZMETLER SAYFASI*/
+
+.services__title {
+  font-size: 2.2rem;
+}
+.services__subtitle {
+  font-size: 1.1rem;
+}
+
+.faq__box {
+  flex-direction: row;
+  width: 720px;
+}
+.faq__box__content {
+  text-align: left;
+}
+.question {
+  font-size: 1.1em;
+}
+.answer {
+  font-size: 1rem;
+}
+
+/*İLETİŞİM SAYFASI*/
+.contact__wrapper {
+  max-width: 600px;
+}
+.contact__title {
+  margin-bottom: 32px;
+  margin-top: 8px;
+}
+.contact__subtitle {
+  font-size: 1rem;
+}
+.contact__tool {
+  font-size: 1rem;
+}
+.contact__info {
+  font-size: 1rem;
+}
+.contact__form {
+  max-width: 600px;
+}
+.contact__form__title {
+  font-size: 1.6rem;
+}
+.btn__contact{
+  width:100%;
+}
+.location__title {
+  font-size: 1.6rem;
+}
+.location__subtitle {
+  font-size: 1.1rem;
+}

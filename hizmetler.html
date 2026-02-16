@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./md.css"
+      media="(min-width:768px) and (max-width:1023.98px)"
+    />
+    <link rel="stylesheet" href="./lg.css" media="(min-width:1024px)" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar__top">
+        <a class="link__logo" href="/"
+          ><img src="./assets/logologo.svg" alt="Altın Mimarlık logo" /><span
+            class="logo__text"
+            >ALTIN MİMARLIK</span
+          ></a
+        >
+        <ul class="navbar__top__list">
+          <li><a href="./anasayfa.html">ANASAYFA</a></li>
+          <li class="active"><a href="#">HİZMETLER</a></li>
+          <li><a href="./iletişim.html">İLETİŞİM</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="services-header">
+        <h2 class="services__title">Neler Yapıyoruz?</h2>
+        <p class="services__subtitle">
+          Fikirlerinizi yere sağlam basan projelere, hayallerinizi ise içinde
+          yaşanacak nitelikli mekanlara dönüştürüyoruz.
+        </p>
+      </div>
+      <section class="details__section">
+        <div class="details__wrapper">
+          <div class="detail__area" id="detail__area__1">
+            <picture class="detail__design_image" id="detail__image__1">
+              <source
+                srcset="./assets/design__md.avif"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="./assets/design__lg.avif"
+                media="(min-width:768px) and (max-width:1023.98px)"
+              />
+              <source
+                srcset="./assets/design__md.avif"
+                media="(max-width:767.98px)"
+              />
+              <img
+                src="./assets/design__image.jpg"
+                alt="modern konut ve işyeri binası"
+                loading="lazy"
+                decoding="async"
+                width="2048"
+                height="2048"
+              />
+            </picture>
+            <div class="detail__area__content">
+              <h3 class="detail__content__title">
+                MİMARİ TASARIM VE PROJELENDİRME
+              </h3>
+              <div class="process_table">
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/magnifier__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Etüt ve Analiz</p>
+                      <p class="design__step__account">
+                        İhtiyaç programının belirlenmesi ve arazi/mekan analizi
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Konsept Taslaklar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/pencil__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Tasarım ve Geliştirme</p>
+                      <p class="design__step__account">
+                        Plan şemaları ve kütle formunun teknik olarak
+                        olgunlaşıtırılması.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Konsept Taslaklar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/cube__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">3D Görselleştirme</p>
+                      <p class="design__step__account">
+                        Malzeme ve ışık dokusuyla projenin en gerçekçi halinin
+                        sunumu.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Fotogerçekçi Renderlar</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/drafting__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Uygulama Projesi</p>
+                      <p class="design__step__account">
+                        Yapım sürecine esas olan tüm teknik detayların
+                        hazırlanması.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">
+                      Detay ve İmalat Çizimleri
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="detail__area" id="detail__area__2">
+            <div class="detail__area__content">
+              <h3 class="detail__content__title">
+                RUHSAT VE İZİN SÜREÇLERİ YÖNETİMİ
+              </h3>
+              <div class="process_table">
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/folder__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Evrak Toplama</p>
+                      <p class="design__step__account">
+                        Uygulama projesi, müteahhit, kalfa ve şantiye şefi
+                        evraklarının toplanması.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Eksiksiz Evrak Dosyası</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/file__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Mimari Haricindeki Projeler</p>
+                      <p class="design__step__account">
+                        Zemin etüdü, statik, mekanik, elektrik ve harita
+                        projelerinin temini.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Onaylı Uzman Projeler</p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/approvel__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Ruhsat Takibi & Alımı</p>
+                      <p class="design__step__account">
+                        Belediyedeki sürecin takibi, olası eksikliklerin
+                        giderilmesi ve ruhsatın teslimi.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Onaylı İnşaat Ruhsatı</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <picture class="detail__design_image" id="detail__image__2">
+              <source
+                srcset="./assets/permission__md.avif"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="./assets/permission__lg.avif"
+                media="(min-width:768px) and (max-width:1023.98px)"
+              />
+              <source
+                srcset="./assets/permission__md.avif"
+                media="(max-width:767.98px)"
+              />
+              <img
+                src="./assets/permission.jpg"
+                alt="modern konut ve işyeri binası"
+                loading="lazy"
+                decoding="async"
+                width="2048"
+                height="2048"
+              />
+            </picture>
+          </div>
+          <div class="detail__area" id="detail__area__3">
+            <picture class="detail__design_image" id="detail__image__3">
+              <source
+                srcset="./assets/construction__process__md.avif"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="./assets/construction__process__lg.avif"
+                media="(min-width:768px) and (max-width:1023.98px)"
+              />
+              <source
+                srcset="./assets/construction__process__md.avif"
+                media="(max-width:767.98px)"
+              />
+              <img
+                src="./assets/construction__process.jpg"
+                alt="modern konut ve işyeri binası"
+                loading="lazy"
+                decoding="async"
+                width="2048"
+                height="2048"
+              />
+            </picture>
+            <div class="detail__area__content">
+              <h3 class="detail__content__title">
+                ANAHTAR TESLİM İÇ MİMARİ VE UYGULAMA
+              </h3>
+              <div class="process_table">
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/3d__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">İç Mimari & Tasarım</p>
+                      <p class="design__step__account">
+                        Konsept tasarımı, 3D görselleştirme, mobilya ve malzeme
+                        seçimi.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">
+                      Özgün ve Estetik Mekanlar
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/hammer__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">
+                        Anahtar Teslim Uygulama ve Tadilat
+                      </p>
+                      <p class="design__step__account">
+                        Kırım-döküm işleri, tesisat yenileme (elektrik/su) ve
+                        zemin-duvar uygulamaları.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">
+                      Sorunsuz Yenileme Süreci
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/point-roller__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Kaba & İnce İnşaat</p>
+                      <p class="design__step__account">
+                        Alçıpan, boya, seramik, şap ve tüm yapısal uygulama
+                        işleri.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">
+                      Kaliteli İşçilik ve Malzeme
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column_content">
+                    <img
+                      class="column__content__icon"
+                      src="./assets/furniture__icon.svg"
+                      alt=""
+                      aria-hidden="true"
+                      width="40"
+                    />
+                    <div>
+                      <p class="design__step">Özel İmalat ve Montaj</p>
+                      <p class="design__step__account">
+                        Mutfak, banyo, giyinme odası ve projeye özel sabit
+                        mobilya üretimi.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="column_output">
+                    <p class="design__step__account">Fonksiyonel Detaylar</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq__section">
+        <div class="faq__wrapper">
+          <h3 class="faq__title">SIKÇA SORULAN SORULAR</h3>
+          <div class="faq__box" id="faq__box_1">
+            <div class="faq__image__container">
+              <img
+                class="faq__image"
+                src="./assets/community-building.webp"
+                alt="kültür binası"
+                width="150px"
+              />
+            </div>
+            <div class="faq__box__content">
+              <p class="question">
+                Ne tür mimari projeler üzerinde çalışıyorsunuz?
+              </p>
+              <p class="answer">
+                Altın Mimarlık olarak, öncelikle konut ve ticari kullanımlı bina
+                tasarımları üzerine yoğunlaşsak da otel, fabrika, okul, cami ve
+                diğer tüm mimari alanlarda da çalışmaktayız.
+              </p>
+            </div>
+          </div>
+          <div class="faq__box" id="faq__box_2">
+            <div class="faq__image__container">
+              <img
+                class="faq__image"
+                src="./assets/permit.avif"
+                alt="inşaat ruhsatı"
+                width="150"
+              />
+            </div>
+            <div class="faq__box__content">
+              <p class="question">
+                İnşaat ruhsatı alımı sürecinde yardımcı oluyor musunuz?
+              </p>
+              <p class="answer">
+                Evet, inşaat ruhsatı alımı için gerekli tüm süreçlerde ve ilgili
+                belediye başvurularında tam destek sağlıyoruz. Projenizin tüm
+                yasal mevzuatlara ve yönetmeliklere uygunluğunu sağlayarak
+                ruhsat alım sürecini sizin adınıza takip ediyoruz.
+              </p>
+            </div>
+          </div>
+          <div class="faq__box" id="faq__box_3">
+            <div class="faq__image__container">
+              <img
+                class="faq__image"
+                src="./assets/turnkey-house.webp"
+                alt="modern villa örneği"
+                width="150"
+              />
+            </div>
+            <div class="faq__box__content">
+              <p class="question">
+                Anahtar teslim proje ve uygulama çözümleri sunuyor musunuz?
+              </p>
+              <p class="answer">
+                Kesinlikle. Tasarım aşamasından inşaatın tamamlanmasına kadar
+                tüm süreci kapsayan anahtar teslim proje çözümleri sunuyoruz.
+                Dilerseniz, tüm yapım sürecini ve şantiye yönetimini biz
+                üstleniyoruz.
+              </p>
+            </div>
+          </div>
+          <div class="faq__box" id="faq__box_4">
+            <div class="faq__image__container">
+              <img
+                class="faq__image"
+                src="./assets/client.webp"
+                alt="müşteri ile ortak tasarım kararı"
+                width="150"
+              />
+            </div>
+            <div class="faq__box__content">
+              <p class="question">
+                Tasarım aşamasında fikirlerimi belirtebilir miyim?
+              </p>
+              <p class="answer">
+                Biz, iyi bir mimari projenin güçlü bir iş birliğinden doğduğuna
+                inanıyoruz. İsteklerinizin, alışkanlıklarınızın ve yaşam
+                tarzınızın projeye tam olarak yansıması için her aşamada
+                görüşlerinize değer veriyor; hayallerinizi teknik uzmanlığımızla
+                birleştirerek ortak bir vizyon inşa ediyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__table">
+        <div class="footer__cell" id="cell-1">
+          <h2 class="footer__title">ALTIN MİMARLIK HAKKINDA</h2>
+        </div>
+        <div class="footer__cell" id="cell-2">
+          <h2 class="footer__title">İLETİŞİM</h2>
+        </div>
+        <div class="footer__cell" id="cell-3">
+          <div class="cell__divider"></div>
+        </div>
+        <div class="footer__cell" id="cell-4">
+          <div class="cell__divider"></div>
+        </div>
+        <div class="footer__cell" id="cell-5">
+          <p class="footer__text">
+            Mimar Ertürk Altun ve Mimar Elit Altun’un vizyonuyla şekillenen
+            ofisimiz; köklü bir geçmişin tecrübesini, modern dünyanın estetik ve
+            teknolojik değerleriyle buluşturan bir aile kuruluşudur.
+          </p>
+          <h2 class="footer__title">EKİBİMİZ</h2>
+          <ul>
+            <li>
+              <span class="profile">Mimar Ertürk ALTUN</span>
+              <p class="footer__text">
+                Yıldız Teknik Üniversitesi 1987 yılı mimarlık bölümü mezunu
+                olup, 35 yılı aşkın mesleki birikimiyle, Yalova’da Altın
+                Mimarlık'ın kurucusu olarak projelerimizin tasarım, teknik
+                çözümleme ve uygulama süreçlerine liderlik etmektedir.
+              </p>
+            </li>
+            <li>
+              <span class="profile">Mimar Elit ALTUN</span>
+              <p class="footer__text">
+                İstanbul Bilgi Üniversitesi 2007 yılı mimarlık bölümü mezunudur.
+                Aktif mimarlık kariyeri kapsamında; konsept tasarımdan uygulama
+                projelerine kadar tüm süreçlerde tasarımcı mimar olarak rol
+                almaktadır. Mimari uzmanlığının yanı sıra Full-stack AI
+                Developer ünvanına sahip olup; modern web teknolojileri,
+                front-end geliştirme ve yapay zeka entegrasyonlu dijital
+                çözümler alanında da profesyonel hizmetler sunmaktadır.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__cell" id="cell-6">
+          <p class="footer__text">
+            Adnan Menderes Mah.<br />
+            Rahmi Üstel Cad.<br />No:5C Merkez, Yalova.<br />Tel: +90 537 683 63
+            82
+          </p>
+        </div>
+        <div class="footer__cell" id="cell-7">
+          <div></div>
+        </div>
+        <div class="footer__cell" id="cell-8">
+          <span class="footer__email">altinmimarlik77@gmail.com</span>
+        </div>
+        <div class="footer__cell" id="cell-9">
+          <h5 class="footer__logo-text">ALTIN MİMARLIK</h5>
+          <div class="footer__partnership">
+            <span>Mimar Ertürk ALTUN</span>
+            <span class="ampersand">&</span>
+            <span>Mimar Elit ALTUN</span>
+            <p class="partnership-tag">Ortaklığı</p>
+          </div>
+          <div class="footer__copyright">
+            <span>© 2026 Altın Mimarlık. All Rights Reserved.</span>
+          </div>
+        </div>
+
+         <div class="footer__cell" id="cell-10">
+          <a
+            href="https://wa.me/905376836382"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp üzerinden bizimle iletişime geçin"
+            ><img
+              src="./assets/whatsapp__icon.svg"
+              alt=""
+              aria-hidden="true"
+              width="30"
+              height="30"
+          /></a>
+          <a
+            href="https://www.instagram.com/elitaltunmimarlik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram üzerinden bizimle iletişime geçin"
+            ><img
+              src="./assets/instagram__icon.svg"
+              alt=""
+              aria-hidden="true"
+              width="30"
+              height="30"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js" charset="UTF-8"></script>
+  </body>
+</html>

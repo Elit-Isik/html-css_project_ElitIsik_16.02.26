@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="./md.css"
+      media="(min-width:768px) and (max-width:1023.98px)"
+    />
+    <link rel="stylesheet" href="./lg.css" media="(min-width:1024px)" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar__top">
+        <a class="link__logo" href="/"
+          ><img src="./assets/logologo.svg" alt="Altın Mimarlık logo" /><span
+            class="logo__text"
+            >ALTIN MİMARLIK</span
+          ></a
+        >
+        <ul class="navbar__top__list">
+          <li><a href="./anasayfa.html">ANASAYFA</a></li>
+          <li><a href="./hizmetler.html">HİZMETLER</a></li>
+          <li class="active"><a href="#">İLETİŞİM</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact__section">
+        <div class="contact__container">
+          <div class="contact__wrapper">
+            <h2>BİZE ULAŞIN</h2>
+            <h1 class="contact__title">Projeniz Hakkında Konuşalım</h1>
+            <p class="contact__subtitle">
+              Mimari tasarım, projelendirme, ruhsat işleri, anahtar teslim
+              inşaat veya tadilat... Vizyonunuzu gerçeğe dönüştürmek için
+              buradayız.
+            </p>
+            <div class="contact__type__wrapper">
+              <div class="contact__type">
+                <a
+                  href="mailto:altinmimarlik77@gmail.com"
+                  aria-label="E-posta gönder"
+                  ><img
+                    src="./assets/email__icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                /></a>
+                <div class="contact__type__text">
+                  <span class="contact__tool">Email</span>
+                  <p class="contact__info">altinmimarlik77@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact__type">
+                <a
+                  href="https://wa.me/905376836382"
+                  aria-label="Whatsapp ile İletişime Geç"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><img
+                    src="./assets/phone__deco__icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40px"
+                /></a>
+                <div class="contact__type__text">
+                  <span class="contact__tool">Telefon Numarası</span>
+                  <p class="contact__info">+905376836382</p>
+                </div>
+              </div>
+              <div class="contact__type">
+                <img
+                  src="./assets/clock__icon.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="40"
+                />
+                <div class="contact__type__text">
+                  <span class="contact__tool">Yanıt Süresi</span>
+                  <p class="contact__info">
+                    İş günleri içerisinde 24 saatte geri dönüş yapmaktayız.
+                  </p>
+                </div>
+              </div>
+              <div class="contact__type">
+                <a
+                  href="https://www.instagram.com/elitaltunmimarlik/"
+                  aria-label="Sosyal Medyamızı Ziyaret Edin"
+                  ><img
+                    src="./assets/instagram__deco__icon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40px"
+                /></a>
+                <div class="contact__type__text">
+                  <span class="contact__tool">Instagram</span>
+                  <p class="contact__info">elitaltunmimarlik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact__form">
+            <form role="form" action="/submit-contact" method="post">
+              <h3 class="contact__form__title">Mesaj Gönderin</h3>
+              <div class="form__group">
+                <label for="fullname" class="contact__label"
+                  >İsim ve Soyisim</label
+                >
+                <input
+                  class="contact__input"
+                  type="text"
+                  id="fullname"
+                  name="fullName"
+                  required
+                  placeholder="Adınız Soyadınız"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="email_address" class="contact__label">Email</label>
+                <input
+                  class="contact__input"
+                  type="email"
+                  id="email_address"
+                  name="email"
+                  placeholder="name@company.com"
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="tel" class="contact__label"
+                  >Telefon Numaranız</label
+                >
+                <input
+                  class="contact__input"
+                  type="tel"
+                  id="tel"
+                  name="mobilePhone"
+                  pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}"
+                  placeholder="5XX XXX XX XX"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="service" class="contact__label"
+                  >İlgilendiğiniz Hizmetimiz</label
+                >
+                <select name="service" id="service" class="contact__input">
+                  <option value="" selected>Hizmet Seçin</option>
+                  <option value="design">Mimari Tasarım</option>
+                  <option value="permit">Mimari Tasarım ve Ruhsat</option>
+                  <option value="turnkey">Anahtar Teslim</option>
+                  <option value="interior">İç mimari veya tadilat</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label for="comments" class="contact__label"
+                  >Projenizle İlgili Belirtmek İsteğiniz Detaylar</label
+                >
+                <textarea
+                  class="contact__input"
+                  id="comments"
+                  name="comments"
+                  rows="5"
+                  cols="30"
+                  placeholder="Projenizden bahsedin. Parsel bilgileri, fikirleriniz, ihtiyaçlarınız, merak ettikleriniz... Size nasıl yardımcı olalım?"
+                ></textarea>
+              </div>
+
+              <div class="form__group__row">
+                <input
+                  class="contact__input"
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  required
+                />
+                <label for="privacy" class="contact__label"
+                  ><a href="privacy-policy.html"
+                    >Kullanım şartlarını ve koşullarını</a
+                  >
+                  kabul ediyorum.
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn__contact">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="location">
+        <div class="location__wrapper">
+          <div class="location__image__container">
+            <picture>
+              <source
+                srcset="./assets/location__md.avif"
+                media="(min-width: 1024px)"
+              />
+              <source
+                srcset="./assets/location__md.avif"
+                media="(min-width:768px) and (max-width:1023.98px)"
+              />
+              <source
+                srcset="./assets/location__sm.avif"
+                media="(max-width:767.98px)"
+              />
+              <img
+                src="./assets/location.png"
+                alt="Altın Mimarlık'ın konumu"
+                loading="lazy"
+                decoding="async"
+                width="2048"
+                height="2048"
+              />
+            </picture>
+          </div>
+          <div class="location__content">
+            <h3 class="location__title">
+              Hayallerinizi Teknik Hassasiyetle İnşa Ediyoruz.
+            </h3>
+            <p class="location__subtitle">
+              Projeleriniz hakkında konuşmak, teknik danışmanlık almak veya
+              vizyonumuzu yakından tanımak için ofisimize bekliyoruz. Kahvemizi
+              içerken geleceği birlikte tasarlayalım.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__table">
+        <div class="footer__cell" id="cell-1">
+          <h2 class="footer__title">HAKKIMIZDA</h2>
+        </div>
+        <div class="footer__cell" id="cell-2">
+          <h2 class="footer__title">İLETİŞİM</h2>
+        </div>
+        <div class="footer__cell" id="cell-3">
+          <div class="cell__divider"></div>
+        </div>
+        <div class="footer__cell" id="cell-4">
+          <div class="cell__divider"></div>
+        </div>
+        <div class="footer__cell" id="cell-5">
+          <p class="footer__text">
+            Mimar Ertürk Altun ve Mimar Elit Altun’un vizyonuyla şekillenen
+            ofisimiz; köklü bir geçmişin tecrübesini, modern dünyanın estetik ve
+            teknolojik değerleriyle buluşturan bir aile kuruluşudur.
+          </p>
+          <h2 class="footer__title">EKİBİMİZ</h2>
+          <ul>
+            <li>
+              <span class="profile">Mimar Ertürk ALTUN</span>
+              <p class="footer__text">
+                Yıldız Teknik Üniversitesi 1987 yılı mimarlık bölümü mezunu
+                olup, 35 yılı aşkın mesleki birikimiyle, Yalova’da Altın
+                Mimarlık'ın kurucusu olarak projelerimizin tasarım, teknik
+                çözümleme ve uygulama süreçlerine liderlik etmektedir.
+              </p>
+            </li>
+            <li>
+              <span class="profile">Mimar Elit ALTUN</span>
+              <p class="footer__text">
+                İstanbul Bilgi Üniversitesi 2007 yılı mimarlık bölümü mezunudur.
+                Aktif mimarlık kariyeri kapsamında; konsept tasarımdan uygulama
+                projelerine kadar tüm süreçlerde tasarımcı mimar olarak rol
+                almaktadır. Mimari uzmanlığının yanı sıra Full-stack AI
+                Developer ünvanına sahip olup; modern web teknolojileri,
+                front-end geliştirme ve yapay zeka entegrasyonlu dijital
+                çözümler alanında da profesyonel hizmetler sunmaktadır.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__cell" id="cell-6">
+          <p class="footer__text">
+            Adnan Menderes Mah.<br />
+            Rahmi Üstel Cad.<br />No:5C Merkez, Yalova.<br />Tel: +90 537 683 63
+            82
+          </p>
+        </div>
+        <div class="footer__cell" id="cell-7">
+          <div></div>
+        </div>
+        <div class="footer__cell" id="cell-8">
+          <span class="footer__email">altinmimarlik77@gmail.com</span>
+        </div>
+        <div class="footer__cell" id="cell-9">
+          <h5 class="footer__logo-text">ALTIN MİMARLIK</h5>
+          <div class="footer__partnership">
+            <span>Mimar Ertürk ALTUN</span>
+            <span class="ampersand">&</span>
+            <span>Mimar Elit ALTUN</span>
+            <p class="partnership-tag">Ortaklığı</p>
+          </div>
+          <div class="footer__copyright">
+            <span>© 2026 Altın Mimarlık. All Rights Reserved.</span>
+          </div>
+        </div>
+
+        <div class="footer__cell" id="cell-10">
+          <a
+            href="https://wa.me/905376836382"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp üzerinden bizimle iletişime geçin"
+            ><img
+              src="./assets/whatsapp__icon.svg"
+              alt=""
+              aria-hidden="true"
+              width="30"
+              height="30"
+          /></a>
+          <a
+            href="https://www.instagram.com/elitaltunmimarlik/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram üzerinden bizimle iletişime geçin"
+            ><img
+              src="./assets/instagram__icon.svg"
+              alt=""
+              aria-hidden="true"
+              width="30"
+              height="30"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="main.js" charset="UTF-8"></script>
+  </body>
+</html>
